@@ -18,6 +18,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 
+
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
   version-control t      ; Use version numbers on backups
