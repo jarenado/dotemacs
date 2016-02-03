@@ -13,11 +13,13 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
+(require 'linum) 
+(global-linum-mode 1)
+
 (require 'use-package)
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
@@ -97,4 +99,3 @@
 (require 'init-ibuffer.el)
 (require 'dired-x)
 
-(provide 'init.el)
