@@ -31,6 +31,7 @@
 
 
 (require 'twittering-mode)
+
 (require 'elisp-slime-nav)
 (defun my-lisp-hook ()
   (elisp-slime-nav-mode)
