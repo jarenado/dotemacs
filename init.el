@@ -3,6 +3,8 @@
 (setq package-enable-at-startup nil)
 
 (add-to-list 'load-path "~/.emacs_d/config")
+(add-to-list 'load-path "~/.emacs_d/twit")  ; Save directory
+
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                          ("org" . "http://orgmode.org/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
@@ -24,6 +26,7 @@
   )
 
 
+(require 'twittering-mode)
 (require 'elisp-slime-nav)
 (defun my-lisp-hook ()
   (elisp-slime-nav-mode)
@@ -41,6 +44,16 @@
 
 (require 'helm)
 (require 'helm-config)
+
+(require 'evil-leader)
+(global-evil-leader-mode)
+
+(require 'evil)
+(evil-mode 1)
+
+(require 'key-chord)
+(key-chord-mode 1)
+
 (use-package magit
   :ensure magit
   :config
@@ -58,15 +71,6 @@
     (evil-define-key 'normal magit-diff-mode-map
         "j" 'magit-goto-next-section
         "k" 'magit-goto-previous-section)))
-
-(require 'evil-leader)
-(global-evil-leader-mode)
-
-(require 'evil)
-(evil-mode 1)
-
-(require 'key-chord)
-(key-chord-mode 1)
 
 (key-chord-define-global "jk" 'evil-normal-state)
 
@@ -90,3 +94,5 @@
 
 (require 'init-ibuffer.el)
 (require 'dired-x)
+
+(provide 'init.el)
