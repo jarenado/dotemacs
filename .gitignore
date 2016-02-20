@@ -5,3 +5,5 @@ eshell
 el-get
 custom.el
 *.elc
+*#
+emacs-backup

@@ -13,6 +13,11 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(setq org-agenda-files (list "~/org/newgtd.org"))
+;; (global-font-lock-mode 1)  Not needed in recent emacsen
 (require 'linum) 
 (global-linum-mode 1)
 
