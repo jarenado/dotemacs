@@ -16,8 +16,20 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
-(setq org-agenda-files (list "~/org/newgtd.org"))
+
+(setq org-agenda-files (list "~/Dropbox/org/"))
 ;; (global-font-lock-mode 1)  Not needed in recent emacsen
+(setq org-directory "~/org/")
+ (setq org-default-notes-file "~/org/newgtd.org")
+ (setq remember-annotation-functions '(org-remember-annotation))
+ (setq remember-handler-functions '(org-remember-handler))
+ (add-hook 'remember-mode-hook 'org-remember-apply-template)
+ (define-key global-map "\C-cr" 'org-remember)
+(setq org-remember-templates
+    (("Todo" ?t "* TODO %^{Brief Description} %^g\nAdded: %U" 
+	"~/org/newgtd.org" "Tasks")
+    )
+
 (require 'linum) 
 (global-linum-mode 1)
 
