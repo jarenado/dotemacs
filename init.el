@@ -15,8 +15,8 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
-(tool-bar-mode -1)
-(menu-bar-mode -1)
+(tool-bar-mode 1)
+(menu-bar-mode 1)
 (scroll-bar-mode -1)
 
 ;; arduino-mode
@@ -47,7 +47,7 @@
 ;(require 'my-woman)
 ;(require 'my-comint)
 ;(require 'my-unbound-keys)
-;(require 'my-languages)
+(require 'my-languages)
 ;(require 'my-shell)
 ;(require 'my-filetypes)
 ;(require 'my-term)
@@ -119,14 +119,16 @@
     )
 )
 
+
 (setq make-backup-files nil)
-;; (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
-;;   backup-by-copying t    ; Don't delink hardlinks
-;;   version-control t      ; Use version numbers on backups
-;;   delete-old-versions t  ; Automatically delete excess backups
-;;   kept-new-versions 20   ; how many of the newest versions to keep
-    ;;   kept-old-versions 5    ; and how many of the old
-;;   )
+
+(setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
+  backup-by-copying t    ; Don't delink hardlinks
+  version-control t      ; Use version numbers on backups
+  delete-old-versions t  ; Automatically delete excess backups
+  kept-new-versions 20   ; how many of the newest versions to keep
+      kept-old-versions 5    ; and how many of the old
+  )
 
 
 (use-package twittering-mode
