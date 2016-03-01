@@ -17,6 +17,7 @@
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;; arduino-mode
 (require 'cl)
@@ -50,7 +51,7 @@
 ;(require 'my-shell)
 ;(require 'my-filetypes)
 ;(require 'my-term)
-;(require 'my-magit)
+(require 'my-magit)
 ;(require 'my-android)
 ;(require 'my-eshell)
 ;(require 'my-ielm)
@@ -84,9 +85,7 @@
     )
   )
 
-(provide 'init)
-
-
+;; org-agenda stuff, TODO: clean up
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
@@ -104,6 +103,8 @@
 	"~/org/newgtd.org" "Tasks")
     )
 
+;; basic syntax for now 
+;; (setq-default tab-width 4 indent-tabs-mode nil)
 ;; navigate lisp with slime
 (use-package elisp-slime-nav
     :ensure elisp-slime-nav
@@ -124,64 +125,25 @@
 ;;   version-control t      ; Use version numbers on backups
 ;;   delete-old-versions t  ; Automatically delete excess backups
 ;;   kept-new-versions 20   ; how many of the newest versions to keep
-;;   kept-old-versions 5    ; and how many of the old
+    ;;   kept-old-versions 5    ; and how many of the old
 ;;   )
 
 
-;(require 'twittering-mode)
+(use-package twittering-mode
+  :ensure twittering-mode
+  ;; :config
+  ;; (progn
+  ;;   )
+  )
 
 
+(use-package magit
+  :ensure magit
+  :config
+  (progn
+  (setq magit-auto-revert-mode nil)
+    ;; tell magit not to complain about auto-revert-mode being a new setting
+    (setq magit-last-seen-setup-instructions "1.4.0")
+    )
 
-;(require 'helm)
-;(require 'helm-config)
-
-;(require 'evil-leader)
-;(global-evil-leader-mode)
-
-;(require 'evil)
-;(evil-mode 1)
-
-;(require 'key-chord)
-;(key-chord-mode 1)
-
-;(use-package magit
-  ;:ensure magit
-  ;:config
-  ;(progn
-    ;(evil-set-initial-state 'magit-mode 'normal)
-    ;(evil-set-initial-state 'magit-status-mode 'normal)
-    ;(evil-set-initial-state 'magit-diff-mode 'normal)
-    ;(evil-set-initial-state 'magit-log-mode 'normal)
-    ;(evil-define-key 'normal magit-mode-map
-        ;"j" 'magit-goto-next-section
-        ;"k" 'magit-goto-previous-section)
-    ;(evil-define-key 'normal magit-log-mode-map
-        ;"j" 'magit-goto-next-section
-        ;"k" 'magit-goto-previous-section)
-    ;(evil-define-key 'normal magit-diff-mode-map
-        ;"j" 'magit-goto-next-section
-        ;"k" 'magit-goto-previous-section)))
-
-;(key-chord-define-global "jk" 'evil-normal-state)
-
-;(evil-define-key 'normal emacs-lisp-mode-map (kbd "K")
-  ;'elisp-slime-nav-describe-elisp-thing-at-point)
-
-;(evil-leader/set-leader "<SPC>")
-;(evil-leader/set-key "b" 'ibuffer)
-;(evil-leader/set-key "w" 'save-buffer)
-;(evil-leader/set-key "<SPC>" 'other-window)
-;(evil-leader/set-key "x" 'helm-M-x)
-;(evil-leader/set-key "f" 'helm-find)
-
-;(define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
-;(define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
-;(define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
-;(define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
-;(define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
-
-
-
-;(require 'init-ibuffer.el)
-;(require 'dired-x)
-
+(provide 'init)
