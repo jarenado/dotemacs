@@ -15,8 +15,8 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
-(tool-bar-mode 1)
-(menu-bar-mode 1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 (scroll-bar-mode -1)
 
 ;; arduino-mode
@@ -61,7 +61,7 @@
 ;(require 'my-god)
 ;(require 'my-sessions)
 (require 'my-leader-keys)
-;; (require 'my-ibuffer)
+    ;; (require 'my-ibuffer)
 
 ;(require 'linum) 
 ;(global-linum-mode 1)
@@ -120,7 +120,7 @@
 )
 
 
-(setq make-backup-files nil)
+(setq auto-save-default nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
