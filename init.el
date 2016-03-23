@@ -47,7 +47,7 @@
 ;(require 'my-woman)
 ;(require 'my-comint)
 ;(require 'my-unbound-keys)
-(require 'my-languages)
+;(require 'my-languages)
 ;(require 'my-shell)
 ;(require 'my-filetypes)
 ;(require 'my-term)
@@ -61,7 +61,7 @@
 ;(require 'my-god)
 ;(require 'my-sessions)
 (require 'my-leader-keys)
-    ;; (require 'my-ibuffer)
+;(require 'my-ibuffer)
 
 ;(require 'linum) 
 ;(global-linum-mode 1)

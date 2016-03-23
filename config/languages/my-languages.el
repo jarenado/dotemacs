@@ -1,4 +1,4 @@
 (require 'my-javascript)
-(require 'my-snippets)
+;; (require 'my-snippets)
 
 (provide 'my-languages)
