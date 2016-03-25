@@ -85,6 +85,11 @@
     )
   )
 
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; org-agenda stuff, TODO: clean up
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
@@ -119,7 +124,6 @@
     )
 )
 
-
 (setq auto-save-default nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
@@ -130,6 +134,7 @@
       kept-old-versions 5    ; and how many of the old
   )
 
+(setq make-backup-files nil)
 
 (use-package twittering-mode
   :ensure twittering-mode
@@ -137,7 +142,6 @@
   ;; (progn
   ;;   )
   )
-
 
 (use-package magit
   :ensure magit
