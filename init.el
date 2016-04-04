@@ -21,9 +21,9 @@
 (scroll-bar-mode -1)
 
 ;; arduino-mode
-(require 'cl)
-(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
-(add-to-list 'auto-mode-alist '("\.ino$" . arduino-mode))
+;;(require 'cl)
+;;(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
+;;(add-to-list 'auto-mode-alist '("\.ino$" . arduino-mode))
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
@@ -52,7 +52,7 @@
 ;(require 'my-shell)
 ;(require 'my-filetypes)
 ;(require 'my-term)
-(require 'my-magit)
+;;(require 'my-magit)
 ;(require 'my-android)
 ;(require 'my-eshell)
 ;(require 'my-ielm)
@@ -144,13 +144,5 @@
   ;;   )
   )
 
-(use-package magit
-  :ensure magit
-  :config
-  (progn
-  (setq magit-auto-revert-mode nil)
-    ;; tell magit not to complain about auto-revert-mode being a new setting
-    (setq magit-last-seen-setup-instructions "1.4.0")
-    )
 
 (provide 'init)
