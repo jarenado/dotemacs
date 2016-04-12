@@ -8,7 +8,7 @@
   "qw"        'evil-window-delete
   "w"         'save-buffer
   "/"         'evilnc-comment-or-uncomment-lines
-  "f"         'helm-mini
+  "f"         'helm-projectile
   "gs"         'magit-status
   "i"         'helm-imenu
   "n"         'linum-mode
