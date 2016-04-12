@@ -1,13 +1,12 @@
 (add-to-list 'load-path (concat user-emacs-directory "config"))
-(add-to-list 'load-path (concat user-emacs-directory "elisp"))
-(add-to-list 'load-path (concat user-emacs-directory "config" "/eyecandy"))
+;; (add-to-list 'load-path (concat user-emacs-directory "elisp"))
+;; (add-to-list 'load-path (concat user-emacs-directory "config" "/eyecandy"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/languages"))
-(add-to-list 'load-path "/usr/share/emacs/site-lisp")
+;; (add-to-list 'load-path "/usr/share/emacs/site-lisp")
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("org" . "http://orgmode.org/elpa/")
+                         ;; ("org" . "http://orgmode.org/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
-
 
 (require 'package)
 (package-initialize)
@@ -17,7 +16,7 @@
     (package-install 'use-package))
 
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
 ;; arduino-mode
@@ -27,7 +26,7 @@
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
-(add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
+;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
 
 ;(require 'my-env)
 ;(require 'my-core)
@@ -48,15 +47,16 @@
 ;(require 'my-woman)
 ;(require 'my-comint)
 ;(require 'my-unbound-keys)
-;(require 'my-languages)
+;; (require 'my-languages)
+(require 'my-snippets)
 ;(require 'my-shell)
 ;(require 'my-filetypes)
 ;(require 'my-term)
 ;;(require 'my-magit)
-;(require 'my-android)
-;(require 'my-eshell)
-;(require 'my-ielm)
-;(require 'my-package-list)
+;;(require 'my-android)
+;;(require 'my-eshell)
+;;(require 'my-ielm)
+;;(require 'my-package-list)
 (require 'my-evil)
 ;(require 'my-help)
 ;(require 'my-god)
@@ -92,22 +92,22 @@
       `((".*" ,temporary-file-directory t)))
 
 ;; org-agenda stuff, TODO: clean up
-(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-ca" 'org-agenda)
+;; (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+;; (global-set-key "\C-cl" 'org-store-link)
+;; (global-set-key "\C-ca" 'org-agenda)
 
-(setq org-agenda-files (list "~/Desktop/Dropbox/org/"))
-(global-font-lock-mode 1)  Not needed in recent emacsen
-(setq org-directory "~/org/")
- (setq org-default-notes-file "~/org/newgtd.org")
- (setq remember-annotation-functions '(org-remember-annotation))
- (setq remember-handler-functions '(org-remember-handler))
- (add-hook 'remember-mode-hook 'org-remember-apply-template)
- (define-key global-map "\C-cr" 'org-remember)
-(setq org-remember-templates
-    (("Todo" ?t "* TODO %^{Brief Description} %^g\nAdded: %U" 
-	"~/org/newgtd.org" "Tasks")
-    )
+;; (setq org-agenda-files (list "~/Desktop/Dropbox/org/"))
+;; (global-font-lock-mode 1)  
+;; (setq org-directory "~/org/")
+;;  (setq org-default-notes-file "~/org/newgtd.org")
+;;  (setq remember-annotation-functions '(org-remember-annotation))
+;;  (setq remember-handler-functions '(org-remember-handler))
+;;  (add-hook 'remember-mode-hook 'org-remember-apply-template)
+;;  (define-key global-map "\C-cr" 'org-remember)
+;; (setq org-remember-templates
+;;     (("Todo" ?t "* TODO %^{Brief Description} %^g\nAdded: %U" 
+;; 	"~/org/newgtd.org" "Tasks")
+;;     )
 
 ;; basic syntax for now 
 ;; (setq-default tab-width 4 indent-tabs-mode nil)
@@ -137,12 +137,12 @@
 
 (setq make-backup-files nil)
 
-(use-package twittering-mode
-  :ensure twittering-mode
-  ;; :config
-  ;; (progn
-  ;;   )
-  )
+;; (use-package twittering-mode
+;;   :ensure twittering-mode
+;;   ;; :config
+;;   ;; (progn
+;;   ;;   )
+;;   )
 
 
 (provide 'init)
