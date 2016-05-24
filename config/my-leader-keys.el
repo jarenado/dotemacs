@@ -9,7 +9,7 @@
   "w"         'save-buffer
   "/"         'evilnc-comment-or-uncomment-lines
   "f"         'helm-projectile
-  "gs"         'magit-status
+  "gs"        'magit-status
   "i"         'helm-imenu
   "n"         'linum-mode
   "a"         'apropos-command
