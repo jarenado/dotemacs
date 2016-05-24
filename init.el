@@ -15,11 +15,14 @@
     (package-refresh-contents)
     (package-install 'use-package))
 
+(setq inhibit-default-init t)
+
 (load-theme 'solarized-dark)
 (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
-
+(require 'multi-term)
+(setq multi-term-program "/bin/bash")
 ;; arduino-mode
 ;;(require 'cl)
 ;;(autoload 'arduino-mode "arduino-mode" "Arduino editing mode." t)
