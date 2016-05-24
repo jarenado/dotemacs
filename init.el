@@ -3,7 +3,6 @@
 ;; (add-to-list 'load-path (concat user-emacs-directory "config" "/eyecandy"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/languages"))
 ;; (add-to-list 'load-path "/usr/share/emacs/site-lisp")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                          ("org" . "http://orgmode.org/elpa/")
@@ -87,6 +86,10 @@
     )
   )
 
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 ;; org-agenda stuff, TODO: clean up
 ;; (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -122,13 +125,14 @@
     )
 )
 
+(setq auto-save-default nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
   version-control t      ; Use version numbers on backups
   delete-old-versions t  ; Automatically delete excess backups
   kept-new-versions 20   ; how many of the newest versions to keep
-  kept-old-versions 5    ; and how many of the old
+      kept-old-versions 5    ; and how many of the old
   )
 
 (setq make-backup-files nil)
@@ -142,17 +146,3 @@
 
 
 (provide 'init)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
