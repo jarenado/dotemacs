@@ -13,6 +13,7 @@
   "i"         'helm-imenu
   "n"         'linum-mode
   "a"         'apropos-command
+  "x"         'helm-M-x
   "V"         'exchange-point-and-mark
   "B"         'eval-buffer
   ;; "e"         'evil-ace-jump-word-mode
