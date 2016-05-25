@@ -11,6 +11,7 @@
   "f"         'helm-projectile
   "gs"        'magit-status
   "i"         'helm-imenu
+  "r"         'remember
   "n"         'linum-mode
   "a"         'apropos-command
   "x"         'helm-M-x

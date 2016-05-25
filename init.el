@@ -16,9 +16,14 @@
     (package-install 'use-package))
 
 (setq inhibit-default-init t)
-
-(load-theme 'solarized-light)
-;; (load-theme 'solarized-dark)
+(add-to-list 'default-frame-alist
+             '(font . "Monaco 14"))
+(setq solarized-use-variable-pitch nil
+      solarized-scale-org-headlines nil)
+;; (load-theme 'solarized-light)
+(load-theme 'solarized-dark)
+(add-hook 'org-mode-hook
+          (lambda () (face-remap-add-relative 'default :family "Monospace")))
 (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -91,11 +96,23 @@
     (powerline-default-theme)
     )
   )
+;; org stuff
+(require 'remember)
+(require 'org-remember)
+(setq org-directory "~/org/")
+(setq org-default-notes-file "~/.notes")
+(setq remember-annotation-functions '(org-remember-annotation))
+(setq remember-handler-functions '(org-remember-handler))
+(add-hook 'remember-mode-hook 'org-remember-apply-template)
 
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
+
+ (setq org-remember-templates
+    '(("Todo" ?t "* TODO %^{Brief Description} %^g\n%?\nAdded: %U" "~/org/newgtd.org" "Tasks")
+     )
+   )
+
+(add-hook 'term-mode-hook (lambda()
+                (yas-minor-mode -1)))
 
 ;; org-agenda stuff, TODO: clean up
 ;; (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -117,6 +134,7 @@
 
 ;; basic syntax for now 
 ;; (setq-default tab-width 4 indent-tabs-mode nil)
+
 ;; navigate lisp with slime
 (use-package elisp-slime-nav
     :ensure elisp-slime-nav
@@ -131,7 +149,6 @@
     )
 )
 
-(setq auto-save-default nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
@@ -141,7 +158,6 @@
       kept-old-versions 5    ; and how many of the old
   )
 
-(setq make-backup-files nil)
 
 ;; (use-package twittering-mode
 ;;   :ensure twittering-mode
@@ -160,9 +176,15 @@
  '(custom-safe-themes
    (quote
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(org-level-1 ((t (:inherit variable-pitch :foreground "#cb4b16" :height 1.3 :family "Monaco ")))))
