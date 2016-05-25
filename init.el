@@ -17,8 +17,9 @@
     (package-install 'use-package))
 
 (setq inhibit-default-init t)
-
-(load-theme 'solarized-light)
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+(define-key global-map "\C-cc" 'org-capture)
+;;(load-theme 'solarized-light)
 ;; (load-theme 'solarized-dark)
 (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
