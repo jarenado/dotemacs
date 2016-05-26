@@ -62,7 +62,7 @@
 (require 'my-languages)
 (require 'my-snippets)
 ;(require 'my-shell)
-(require 'org-mode)
+(require 'my-org-mode)
 ;(require 'my-filetypes)
 ;(require 'my-term)
 ;;(require 'my-magit)
@@ -137,6 +137,17 @@
     (add-hook 'emacs-lisp-mode-hook 'my-lisp-hook)
     )
 )
+;; no startup msg  
+(setq inhibit-startup-message t)        ; Disable startup message 
+
+(add-hook 'emacs-startup-hook 'my-startup-fcn)
+(defun my-startup-fcn ()
+  "do fancy things"
+  (let ((my-buffer (get-buffer-create "my-buffer")))
+    (with-current-buffer my-buffer
+      ;; this is what you customize
+      (insert "some stuff\nmore stuff"))
+    (switch-to-buffer my-buffer)))
 
 (setq auto-save-default nil)
 
