@@ -17,7 +17,11 @@
     (package-install 'use-package))
 
 (setq inhibit-default-init t)
-(setq org-default-notes-file (concat org-directory "/notes.org"))
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/org/notes.org" "Tasks")
+	 "* TODO %?\n  %i\n  %a")
+	("j" "Journal" entry (file+datetree "~/org/journal.org")
+	 "* %?\nEntered on %U\n  %i\n  %a")))
 (define-key global-map "\C-cc" 'org-capture)
 ;;(load-theme 'solarized-light)
 ;; (load-theme 'solarized-dark)
@@ -58,6 +62,7 @@
 (require 'my-languages)
 (require 'my-snippets)
 ;(require 'my-shell)
+(require 'org-mode)
 ;(require 'my-filetypes)
 ;(require 'my-term)
 ;;(require 'my-magit)
