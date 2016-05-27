@@ -8,6 +8,8 @@
                          ("org" . "http://orgmode.org/elpa/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
 
+
+
 (require 'package)
 (package-initialize)
 (setq package-enable-at-startup nil)
@@ -22,7 +24,7 @@
 	 "* TODO %?\n  %i\n  %a")
 	("j" "Journal" entry (file+datetree "~/org/journal.org")
 	 "* %?\nEntered on %U\n  %i\n  %a")))
-(define-key global-map "\C-cc" 'org-capture)
+
 ;;(load-theme 'solarized-light)
 ;; (load-theme 'solarized-dark)
 (tool-bar-mode -1)
@@ -40,6 +42,9 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 ;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
 
+(global-set-key (kbd "C-c C-=") 'text-scale-increase)
+(global-set-key (kbd "C-c C--") 'text-scale-decrease)
+(define-key global-map "\C-cc" 'org-capture)
 ;(require 'my-env)
 ;(require 'my-core)
 ;(require 'my-functions)
@@ -99,10 +104,6 @@
     )
   )
 
-(setq backup-directory-alist
-      `((".*" . ,temporary-file-directory)))
-(setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t)))
 
 ;; org-agenda stuff, TODO: clean up
 ;; (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -140,16 +141,15 @@
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
 
-(add-hook 'emacs-startup-hook 'my-startup-fcn)
-(defun my-startup-fcn ()
-  "do fancy things"
-  (let ((my-buffer (get-buffer-create "my-buffer")))
-    (with-current-buffer my-buffer
-      ;; this is what you customize
-      (insert "some stuff\nmore stuff"))
-    (switch-to-buffer my-buffer)))
+;; (add-hook 'emacs-startup-hook 'my-startup-fcn)
+;; (defun my-startup-fcn ()
+;;   "do fancy things"
+;;   (let ((my-buffer (get-buffer-create "my-buffer")))
+;;     (with-current-buffer my-buffer
+;;       ;; this is what you customize
+;;       (insert "some stuff\nmore stuff"))
+;;     (switch-to-buffer my-buffer)))
 
-(setq auto-save-default nil)
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
   backup-by-copying t    ; Don't delink hardlinks
@@ -159,14 +159,6 @@
       kept-old-versions 5    ; and how many of the old
   )
 
-(setq make-backup-files nil)
-
-;; (use-package twittering-mode
-;;   :ensure twittering-mode
-;;   ;; :config
-;;   ;; (progn
-;;   ;;   )
-;;   )
 
 
 (provide 'init)
