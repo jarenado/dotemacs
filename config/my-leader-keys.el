@@ -1,7 +1,10 @@
 (provide 'my-leader-keys)
 (global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-c i") 
-    (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
+(global-set-key (kbd "C-c C-=") 'text-scale-increase)
+(global-set-key (kbd "C-c C--") 'text-scale-decrease)
+(define-key global-map "\C-cc" 'org-capture)
+
+    (global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 (evil-leader/set-key
   "b" 'ibuffer
   "<SPC>"     'other-window

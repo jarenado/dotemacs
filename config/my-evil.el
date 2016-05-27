@@ -36,6 +36,16 @@
     (setq evil-want-change-word-to-end t)
 
 
+    (use-package linum
+      ;; :commands (evil-leader-mode global-evil-leader-mode)
+      :ensure linum
+      :demand linum
+      :config
+      (progn
+	(global-linum-mode 1)
+	)
+      )
+     
     (use-package evil-nerd-commenter
       :ensure evil-nerd-commenter
       :commands (evilnc-comment-or-uncomment-lines)))
