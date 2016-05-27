@@ -26,7 +26,7 @@
 	 "* %?\nEntered on %U\n  %i\n  %a")))
 
 ;;(load-theme 'solarized-light)
-;; (load-theme 'solarized-dark)
+(load-theme 'solarized-dark)
 (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
