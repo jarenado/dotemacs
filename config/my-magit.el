@@ -1,4 +1,5 @@
 (provide 'my-magit)
+
 (use-package magit
   :ensure magit
   :config
