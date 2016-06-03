@@ -47,7 +47,6 @@
 (require 'my-helm)
 (require 'my-languages)
 (require 'my-snippets)
-(require 'my-multi-term)
 (require 'my-org-mode)
 (require 'my-evil)
 (require 'my-slime)
@@ -55,7 +54,10 @@
 (require 'my-web-mode)
 (require 'my-css-mode)
 
-
+;; Lindsey's computer runs 24.3. magit requires 24.4.
+(if (>= emacs-major-version 24.4)  
+    (require 'my-magit)
+  )
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
 
@@ -81,9 +83,3 @@
 
 (provide 'init)
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

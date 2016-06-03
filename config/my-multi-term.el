@@ -1,4 +1,9 @@
 (provide 'my-multi-term)
 
-(require 'multi-term)
-(setq multi-term-program "/bin/zsh")
+(use-package multi-term
+  :ensure multi-term
+  :config
+  (progn
+    (setq multi-term-program "/bin/zsh")))
+
+;; (require 'multi-term)
