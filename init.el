@@ -16,7 +16,12 @@
 
 ;; use my init only
 (setq inhibit-default-init t)
+
 (setq make-backup-files nil)
+(setq backup-directory-alist
+          `((".*" . ,temporary-file-directory)))
+    (setq auto-save-file-name-transforms
+          `((".*" ,temporary-file-directory t)))
 ;; theme stuff
 ;;(load-theme 'solarized-light)
 (load-theme 'solarized-dark)
