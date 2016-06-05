@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/newgtd.org")
- (front-context-string . "** TODO add task")
- (rear-context-string . "cts][Projects]]\n")
- (position . 687))
+ (front-context-string . "** TODO testing ")
+ (rear-context-string)
+ (position . 9))
 )

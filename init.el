@@ -16,7 +16,7 @@
 
 ;; use my init only
 (setq inhibit-default-init t)
-
+(setq make-backup-files nil)
 ;; theme stuff
 ;;(load-theme 'solarized-light)
 (load-theme 'solarized-dark)
@@ -49,6 +49,7 @@
 (require 'my-snippets)
 (require 'my-org-mode)
 (require 'my-evil)
+(require 'my-undo-tree)
 (require 'my-slime)
 (require 'my-leader-keys)
 (require 'my-web-mode)
@@ -61,13 +62,13 @@
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
 
-(setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
-  ;; backup-by-copying t    ; Don't delink hardlinks
-  version-control t      ; Use version numbers on backups
-  delete-old-versions t  ; Automatically delete excess backups
-  kept-new-versions 20   ; how many of the newest versions to keep
-      kept-old-versions 5    ; and how many of the old
-  )
+;; (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
+;;   ;; backup-by-copying t    ; Don't delink hardlinks
+;;   version-control t      ; Use version numbers on backups
+;;   delete-old-versions t  ; Automatically delete excess backups
+;;   kept-new-versions 20   ; how many of the newest versions to keep
+;;       kept-old-versions 5    ; and how many of the old
+;;   )
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
