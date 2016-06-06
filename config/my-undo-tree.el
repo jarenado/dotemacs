@@ -3,7 +3,7 @@
   :config
   (progn
     (global-undo-tree-mode)
-    (setq undo-tree-history-directory-alist "~/tmp/")
+    (setq undo-tree-history-directory-alist (concat user-emacs-directory "tmp"))
     )
   )
 
