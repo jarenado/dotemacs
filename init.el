@@ -57,11 +57,11 @@
 (require 'my-slime)
 (require 'my-leader-keys)
 (require 'my-web-mode)
-(require 'my-css-mode)
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  
     (require 'my-magit)
+    (require 'my-multi-term)
   )
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
