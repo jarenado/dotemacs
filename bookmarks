@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/org/newgtd.org")
- (front-context-string . "** TODO learn cl")
- (rear-context-string . "-leader-keys)]]\n")
- (position . 544))
+ (front-context-string . "** TODO ask Kuma")
+ (rear-context-string . "tem, index) {]]\n")
+ (position . 572))
 )

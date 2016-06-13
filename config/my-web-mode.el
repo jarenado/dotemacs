@@ -1,4 +1,5 @@
 (require 'web-mode)
+
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -7,5 +8,24 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 4)
+)
+
+(add-hook 'local-write-file-hooks
+            (lambda ()
+               (delete-trailing-whitespace)
+               nil))
+
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+(setq web-mode-enable-css-colorization t)
+
+(setq web-mode-engines-alist
+      '(("php"    . "\\.phtml\\'")
+        ("underscore"  . "\\.html\\."))
+)
 
 (provide 'my-web-mode)
