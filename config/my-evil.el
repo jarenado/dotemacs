@@ -97,7 +97,7 @@
     )
 
     (evil-define-key 'normal emacs-lisp-mode-map (kbd "K")
-  'elisp-slime-nav-describe-elisp-thing-at-point)
+      'elisp-slime-nav-describe-elisp-thing-at-point)
 
     ;; window moving stuff
     (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
@@ -107,7 +107,7 @@
     (define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
 
     (key-chord-define  evil-insert-state-map "jk" 'evil-normal-state)
-  )
+    )
 
 
 
