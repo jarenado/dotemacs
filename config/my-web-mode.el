@@ -6,6 +6,8 @@
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
@@ -19,13 +21,13 @@
                (delete-trailing-whitespace)
                nil))
 
-(add-hook 'web-mode-hook  'my-web-mode-hook)
-
 (setq web-mode-enable-css-colorization t)
 
 (setq web-mode-engines-alist
       '(("php"    . "\\.phtml\\'")
         ("underscore"  . "\\.html\\."))
 )
+
+(add-hook 'web-mode-hook  'my-web-mode-hook)
 
 (provide 'my-web-mode)

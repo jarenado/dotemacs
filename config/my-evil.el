@@ -42,8 +42,8 @@
       :demand linum
       :config
       (progn
-	(global-linum-mode 1)
-	)
+        (global-linum-mode 1)
+        )
       )
      
     (use-package evil-nerd-commenter
