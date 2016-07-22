@@ -7,7 +7,7 @@
 ;; In order to work properly, we need to load evil-leader-mode before we load
 ;; evil-mode.
 (use-package evil-leader
-  :commands (evil-leader-mode global-evil-leader-mode)
+  :commands (global-evil-leader-mode evil-leader-mode)
   :ensure evil-leader
   :demand evil-leader
   :config
@@ -96,14 +96,14 @@
 	(kbd "M-s a M-C-s") 'ibuffer-do-isearch-regexp
     )
 
-    (evil-define-key 'normal emacs-lisp-mode-map (kbd "K")
-      'elisp-slime-nav-describe-elisp-thing-at-point)
-
     ;; window moving stuff
     (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
     (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
     (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
     (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+    (define-key evil-normal-state-map (kbd "\S-j") nil)
+    (define-key evil-normal-state-map (kbd "K") 'evil-next-line)
+    (define-key evil-normal-state-map (kbd "\S-k") nil)
     (define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
 
     (key-chord-define  evil-insert-state-map "jk" 'evil-normal-state)

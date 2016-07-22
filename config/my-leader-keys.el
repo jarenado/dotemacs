@@ -2,6 +2,14 @@
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-c C-=") 'text-scale-increase)
 (global-set-key (kbd "C-c C--") 'text-scale-decrease)
+(global-set-key (kbd "\S-k") nil)
+
+(global-set-key (kbd "\S-j")
+    (lambda () (interactive) (next-line 5)))
+
+(global-set-key (kbd "K")
+    (lambda () (interactive) (previous-line 5)))
+
 (define-key global-map "\C-cc" 'org-capture)
 
     (global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
