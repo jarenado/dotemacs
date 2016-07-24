@@ -1,4 +1,4 @@
-(provide 'my-slime)
+;; (provide 'my-slime)
 
 ;; navigate lisp with slime
 (use-package elisp-slime-nav

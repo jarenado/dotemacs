@@ -7,11 +7,14 @@
 (global-set-key (kbd "\S-j")
     (lambda () (interactive) (next-line 5)))
 
-(global-set-key (kbd "K")
-    (lambda () (interactive) (previous-line 5)))
 
 (define-key global-map "\C-cc" 'org-capture)
 
+(eval-after-load "evil-maps"
+  (define-key evil-motion-state-map "\S-k" nil))
+
+(global-set-key (kbd "\S-k")
+    (lambda () (interactive) (previous-line 5)))
     (global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 (evil-leader/set-key
   "b" 'ibuffer

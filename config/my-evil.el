@@ -97,13 +97,14 @@
     )
 
     ;; window moving stuff
-    (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
-    (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
-    (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
-    (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+    ;; (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
+    ;; (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
+    ;; (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+    ;; (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
     (define-key evil-normal-state-map (kbd "\S-j") nil)
     (define-key evil-normal-state-map (kbd "K") 'evil-next-line)
-    (define-key evil-normal-state-map (kbd "\S-k") nil)
+    (define-key evil-normal-state-map (kbd "S-k") nil)
+    (define-key evil-insert-state-map (kbd "S-k") nil)
     (define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
 
     (key-chord-define  evil-insert-state-map "jk" 'evil-normal-state)
