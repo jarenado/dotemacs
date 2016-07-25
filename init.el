@@ -3,16 +3,16 @@
 (add-to-list 'load-path (concat user-emacs-directory "config" "/web-mode"))
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("org" . "http://orgmode.org/elpa/")
-                         ("gnu" . "http://elpa.gnu.org/packages/")))
+                        ("org" . "http://orgmode.org/elpa/")
+                        ("gnu" . "http://elpa.gnu.org/packages/")))
 
 (require 'package)
 (package-initialize)
 (setq package-enable-at-startup nil)
 
 (unless (package-installed-p 'use-package)
-    (package-refresh-contents)
-    (package-install 'use-package))
+(package-refresh-contents)
+(package-install 'use-package))
 
 ;; use my init only
 (setq inhibit-default-init t)
@@ -41,11 +41,11 @@
 ;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
 
 (when window-system
-  (progn
-    (set-frame-size (selected-frame) 205 75)
-    ;; (split-window-vertically)
-    (split-window-horizontally)
-    (enlarge-window 20)))
+(progn
+(set-frame-size (selected-frame) 205 75)
+;; (split-window-vertically)
+(split-window-horizontally)
+(enlarge-window 20)))
 ;(require 'my-env)
 ;(require 'my-core)
 ;(require 'my-dired)
@@ -68,9 +68,9 @@
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  
-    (require 'my-magit)
-    (require 'my-multi-term)
-  )
+(require 'my-magit)
+(require 'my-multi-term)
+)
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
 
