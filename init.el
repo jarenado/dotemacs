@@ -33,6 +33,9 @@
 ;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
+(set-default-font "Consolas-15")
+
+
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
 ;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
