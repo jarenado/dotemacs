@@ -15,6 +15,7 @@
 
 (global-set-key (kbd "\S-k")
     (lambda () (interactive) (previous-line 5)))
+
     (global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
 (evil-leader/set-key
   "b" 'ibuffer
