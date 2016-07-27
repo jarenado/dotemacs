@@ -35,7 +35,6 @@
 
 (set-default-font "Consolas-15")
 
-
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
 ;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
@@ -65,6 +64,7 @@
 ;; (require 'my-slime)
 (require 'my-leader-keys)
 (require 'my-web-mode)
+(require 'my-simplenote)
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  
