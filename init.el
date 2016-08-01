@@ -33,7 +33,6 @@
 ;; (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-(set-default-font "Consolas-15")
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
@@ -70,6 +69,7 @@
 (if (>= emacs-major-version 24.4)  
 (require 'my-magit)
 (require 'my-multi-term)
+(set-default-font "Consolas-15")
 )
 ;; no startup msg  
 (setq inhibit-startup-message t)        ; Disable startup message 
