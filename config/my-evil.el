@@ -103,23 +103,41 @@
     ;; (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
     (define-key evil-normal-state-map (kbd "\S-j") nil)
     (define-key evil-normal-state-map (kbd "S-k") nil)
-    (define-key evil-insert-state-map (kbd "S-k") nil)
+    (define-key evil-insert-state-map (kbd "S-j") nil)
+    
     (define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
 
-    (key-chord-define  evil-insert-state-map "jk" 'evil-normal-state)
+    (key-chord-define evil-insert-state-map "jk" 'evil-normal-state)
     )
 
+    (evil-define-motion myevil-next-visual-line (count)
+    "Move the cursor COUNT screen lines down, or 5."
+    :type exclusive
+        (let ((line-move-visual t))
+        (evil-line-move (or count 5))))
 
+    (evil-define-motion myevil-previous-visual-line (count)
+    "Move the cursor COUNT screen lines down, or 5."
+    :type exclusive
+        (let ((line-move-visual t))
+        (evil-line-move (or count -5))))
 
+    (define-key evil-normal-state-map (kbd "\S-j")
+    (lambda () (interactive) (next-line 5)))
 
+    (define-key evil-normal-state-map (kbd "\S-k")
+    (lambda () (interactive) (previous-line 5)))
+
+    (define-key evil-visual-state-map (kbd "\S-j") 'myevil-next-visual-line)
+    (define-key evil-visual-state-map (kbd "\S-k") 'myevil-previous-visual-line)
 
     ;;(evil-set-initial-state 'flycheck-error-list-mode 'normal)
     ;;(evil-set-initial-state 'git-commit-mode 'insert)
-    ;;(evil-set-initial-state 'shell-mode 'emacs)
+    (evil-set-initial-state 'shell-mode 'emacs)
     ;;(evil-set-initial-state 'esup-mode 'emacs)
     ;;(evil-set-initial-state 'diff-mode 'emacs)
-    ;;(evil-set-initial-state 'term-mode 'emacs)
-    ;;(evil-set-initial-state 'multi-term-mode 'emacs)
+    (evil-set-initial-state 'term-mode 'emacs)
+    (evil-set-initial-state 'multi-term-mode 'emacs)
 
     ;(use-package key-chord
     ;(use-package evil-matchit

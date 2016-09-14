@@ -1,6 +1,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "config"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/languages"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/web-mode"))
+(add-to-list 'exec-path "~/bin")
 
 (setq package-archives '(("melpa" . "http://melpa.milkbox.net/packages/")
                         ("org" . "http://orgmode.org/elpa/")
