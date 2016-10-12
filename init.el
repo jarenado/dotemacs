@@ -26,9 +26,9 @@
 ;;(load-theme 'solarized-light)
 (load-theme 'solarized-dark)
 
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-(setq indent-line-function 'insert-tab)
+;; (setq-default indent-tabs-mode nil)
+;; (setq-default tab-width 2)
+;; (setq indent-line-function 'insert-tab)
 ;; toolbar
 (tool-bar-mode -1)
 ;; (menu-bar-mode -1)
@@ -64,6 +64,7 @@
 ;; (require 'my-slime)
 (require 'my-leader-keys)
 (require 'my-web-mode)
+(require 'my-indent)
 (require 'my-simplenote)
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
@@ -83,17 +84,17 @@
 ;;       kept-old-versions 5    ; and how many of the old
 ;;   )
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(evil-shift-width 4)
- '(tab-stop-list (number-sequence 4 200 4))
- '(tab-width 4))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(custom-safe-themes
+;;    (quote
+;;     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+;;  '(evil-shift-width 2)
+;;  '(tab-stop-list (number-sequence 2 200 2))
+;;  '(tab-width 2))
 
 (provide 'init)
 
@@ -103,3 +104,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))

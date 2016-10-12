@@ -6,11 +6,11 @@
 (global-set-key (kbd "\S-j") nil)
 
 
-(define-key evil-normal-state-map (kbd "\S-j")
-    (lambda () (interactive) (next-line 5)))
+;; (define-key evil-normal-state-map (kbd "\S-j")
+;;     (lambda () (interactive) (next-line 5)))
 
-(define-key evil-normal-state-map (kbd "\S-k")
-    (lambda () (interactive) (next-line 5)))
+;; (define-key evil-normal-state-map (kbd "\S-k")
+;;     (lambda () (interactive) (next-line 5)))
 
 (define-key global-map "\C-cc" 'org-capture)
 
