@@ -66,6 +66,7 @@
 (require 'my-web-mode)
 (require 'my-indent)
 (require 'my-simplenote)
+(require 'my-scratch-message)
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  

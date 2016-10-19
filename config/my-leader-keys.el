@@ -18,7 +18,9 @@
   (define-key evil-motion-state-map "\S-k" nil))
 
 
-    (global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
+(global-set-key (kbd "C-c i") (lambda () (interactive) (find-file "~/.emacs.d/init.el")))
+(global-set-key (kbd "C-c u") (lambda () (interactive) (switch-to-buffer "*scratch*")))
+
 (evil-leader/set-key
   "b" 'ibuffer
   "<SPC>"     'other-window
