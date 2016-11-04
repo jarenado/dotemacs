@@ -7,6 +7,7 @@
                         ("org" . "http://orgmode.org/elpa/")
                         ("gnu" . "http://elpa.gnu.org/packages/")))
 
+
 (require 'package)
 (package-initialize)
 (setq package-enable-at-startup nil)
@@ -68,6 +69,7 @@
 (require 'my-simplenote)
 (require 'my-scratch-message)
 
+
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  
   (require 'my-magit)
@@ -112,4 +114,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default))))
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(safe-local-variable-values
+   (quote
+    ((eval add-hook
+	   (quote after-save-hook)
+	   (quote simplenote2-push-buffer))))))
