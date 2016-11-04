@@ -70,8 +70,8 @@
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
 (if (>= emacs-major-version 24.4)  
-(require 'my-magit)
-(require 'my-multi-term)
+  (require 'my-magit)
+  (require 'my-multi-term)
 (set-default-font "Consolas-15")
 )
 ;; no startup msg  
