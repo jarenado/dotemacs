@@ -68,6 +68,7 @@
 (require 'my-indent)
 (require 'my-simplenote)
 (require 'my-scratch-message)
+(require 'my-company-mode)
 
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
