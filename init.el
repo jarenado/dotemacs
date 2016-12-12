@@ -27,6 +27,9 @@
 ;;(load-theme 'solarized-light)
 (load-theme 'solarized-dark)
 
+;;Turn of the fucking bell
+(setq visible-bell nil) ;; The default
+(setq ring-bell-function 'ignore)
 ;; (setq-default indent-tabs-mode nil)
 ;; (setq-default tab-width 2)
 ;; (setq indent-line-function 'insert-tab)
@@ -115,7 +118,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(safe-local-variable-values
    (quote
     ((eval add-hook
