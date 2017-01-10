@@ -72,6 +72,7 @@
 (require 'my-simplenote)
 (require 'my-scratch-message)
 (require 'my-company-mode)
+(require 'my-neotree)
 
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
