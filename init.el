@@ -49,6 +49,10 @@
 ;; (split-window-vertically)
 (split-window-horizontally)
 (enlarge-window 20)))
+
+;; default browser
+(setq browse-url-browser-function 'browse-url-chromium) ; google's browser
+
 ;(require 'my-env)
 ;(require 'my-core)
 ;(require 'my-dired)
@@ -72,6 +76,7 @@
 (require 'my-simplenote)
 (require 'my-scratch-message)
 (require 'my-company-mode)
+(require 'my-golden-ratio)
 (require 'my-neotree)
 
 
