@@ -41,12 +41,10 @@
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
-;; (add-to-list 'load-path "~/.emacs.d/twit")  ; Save directory
 
 (when window-system
 (progn
 (set-frame-size (selected-frame) 205 75)
-;; (split-window-vertically)
 (split-window-horizontally)
 (enlarge-window 20)))
 
