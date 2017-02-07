@@ -25,7 +25,7 @@
 
 ;; theme stuff
 ;;(load-theme 'solarized-light)
-(load-theme 'solarized-dark)
+(load-theme 'solarized-dark t)
 
 ;;Turn of the fucking bell
 (setq visible-bell nil) ;; The default
