@@ -85,7 +85,7 @@
 (set-default-font "Consolas-15")
 )
 ;; no startup msg  
-(setq inhibit-startup-message t)        ; Disable startup message 
+;; (setq inhibit-startup-message t)        ; Disable startup message 
 
 ;; (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
 ;;   ;; backup-by-copying t    ; Don't delink hardlinks
