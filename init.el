@@ -25,19 +25,19 @@
 
 ;; theme stuff
 ;;(load-theme 'solarized-light)
-(load-theme 'solarized-dark t)
+;; (load-theme 'solarized-dark t)
+(load-theme 'rebecca t)
 
 ;;Turn of the fucking bell
 (setq visible-bell nil) ;; The default
 (setq ring-bell-function 'ignore)
-;; (setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 ;; (setq-default tab-width 2)
 ;; (setq indent-line-function 'insert-tab)
 ;; toolbar
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-
 
 (require 'use-package)
 (add-to-list 'load-path "~/.emacs.d/config")
@@ -82,7 +82,7 @@
 (if (>= emacs-major-version 24.4)  
   (require 'my-magit)
   (require 'my-multi-term)
-(set-default-font "Consolas-15")
+(set-default-font "Fira-Code-15")
 )
 ;; no startup msg  
 ;; (setq inhibit-startup-message t)        ; Disable startup message 
@@ -123,8 +123,11 @@
  '(custom-safe-themes
    (quote
     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(package-selected-packages
+   (quote
+    (rebecca-theme magit neotree golden-ratio company yasnippet web-mode use-package solarized-theme simplenote2 powerline php-mode key-chord js2-mode helm-projectile evil-surround evil-nerd-commenter evil-matchit evil-leader)))
  '(safe-local-variable-values
    (quote
     ((eval add-hook
-	   (quote after-save-hook)
-	   (quote simplenote2-push-buffer))))))
+           (quote after-save-hook)
+           (quote simplenote2-push-buffer))))))

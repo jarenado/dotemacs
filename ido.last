@@ -2,33 +2,69 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/jose/Sites/" . "public_html/")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/pages/" . "jcrew/")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/" . "pages/")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/assets/" . "img/")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/" . "assets/")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/" . "src/")
+ ("/home/jose/Sites/ecommerce-responsive-email/" . "order-confirmation/")
+ ("/home/jose/" . "Sites/")
+ ("/home/jose/Sites/" . "ecommerce-responsive-email/")
  ("/home/" . "jose/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/pages/jcrew/"
+ "/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/assets/img/"
+ "/home/jose/Sites/ecommerce-responsive-email/order-confirmation/"
+ "/home/jose/Sites/ecommerce-responsive-email/"
  "/home/jose/"
  "/home/jose/Sites/public_html/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "index.html"
+ "dot.png"
+ "README.md"
+ "LICENSE"
+ "npm-debug.log"
  ".emacs"
  ".vimrc"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jose/" (22187 36927 719752 953000) "music/" "iatt_backup/" ".asunder" "#.vimrc#" ".zshrc" ".gitignore" ".jnewsrc.time" ".netrc" "Calibre Library/" "drive_bak/" ".steam/" ".goobook_cache" ".vimgolf/" "tmp/" ".asunder_album_artist" ".emacs" "Lists/" ".xbmc/" ".muttrc" ".newsbeuter/" ".viminfv.tmp" "mm_journal/" ".mutt/" ".vimrc!" "transfer/" "books/" "dw/" "Desktop/" ".adobe/" ".Xdefaults" "bin/" ".gnome2_private/" ".custom_xrandr.swp" ".bash_profile" "carlos_webite/" ".xmonad/" ".vimrc.swp" "1229-appmktg-DW/" ".esd_auth" ".sane/" ".fontconfig/" ".Skype/" ".custom_xrandr.swm" "old_conky/" "2015-11-25-015258_1366x768_scrot.png" ".mission-control/" "#.emacs#" ".dbus/" "publish/" ".FBReader/" ".tmux.conf" ".conky_test" ".custom_xrandr.swn" ".dropbox/" ".vim-tmp/" ".links/" ".offlineimap/" ".qws/" ".scripts/" ".arduino15/" ".ievms/" ".weechat/" ".dropbox-dist/" "new_project/" ".nicotine/" ".Xmodmap" ".bash_login" "dotfiles/" ".vimrcbakky" ".NERDTreeBookmarks" ".asunder_album_genre" "abcde.fa0f5211/" ".mailcap" ".fluxbox/" ".grip" ".FontForge/" ".icedtea/" ".todo/" ".local/" ".fonts" ".xinitrc" ".dbshell" ".ssh/" ".npm/" ".viminfo.tmp" ".nethackrc" ".eclipse/" ".pki/" "archive/" ".v8flags.4.6.85.31.jose.json" ".gem/" ".audacity-data/" ".git-credentials" "yo" ".vimrc.plugins" ".zcompdump-archbox-5.0.5" ".centerim/" ".zsnes/" ".lein/" ".mplayer/" ".simplenoterc" ".bashrc" ".irb_history" ".viminfy.tmp" "__MACOSX/" ".gvfs/" ".i3/" "games/" ".calibre_calibre GUI.lock" "workspace/" ".zcompdump-archbox-5.0.7" "scratch" ".VirtualBox/" ".irb-history" "Music/" ".yeqwqauh" ".wine/" ".gnome2/" "Public/" ".emacs~" ".m2/" ".cache/" ".jnewsrc" "resume/" ".pulse-cookie" ".config/" ".jnewsrc-lock" "2015-11-20-162510_3286x1080_scrot.png" ".irssi/" ".fehbg" ".gtk-bookmarks" ".minecraft/" "EVE/" ".gphoto/" ".z" ".screenrc" ".conkyrc" ".nolistEF78.rr" "Templates/" ".putty/" "fonts/" ".node_repl_history" ".bash_history" "Pictures/" ".purple/" ".zcompdump-archbox-5.0.2" ".vim/" ".backgrounds/" "test.js" ".oyasono_hours.swp" ".xmonad.bak/" ".gnupg/" ".viminfz.tmp" ".node-gyp/" ".xmobarrc" ".mpdconf" ".heroku/" ".Xauthority" ".zcompdump-archbox-5.1.1" ".wmii/" ".vim-fuf-data/" "z.sh" ".dropbox.older/" ".bower/" ".vimrc" ".thumbnails/" ".oh-my-zsh/" ".bash_logout" ".mpd/" ".gimp-2.8/" ".kismet/" ".pulse/" ".zcompdump" ".gconf/" ".lesshst" ".mysql_history" ".viper" ".slrnrc" ".histfile" "Sites/" "Videos/" "how-to-npm/" ".tmux.conf2" ".macromedia/" ".ncmpcpp/" "Arduino/" ".gitconfig" ".viminfx.tmp" ".emacs.d/" ".elinks/" ".zsh-update" ".wicd/" ".viminfw.tmp" ".gnome/" ".asunder_album_title" ".viminfo" "Documents/" "2015-11-20-153022_3286x1080_scrot.png" ".dropbox.old/" ".java/" ".steampath" ".icons/" ".checkgmail/" ".custom_xrandr.swo" "Apps/" ".emacs-backups/" "Files_downloaded_by_AirDroid.zip" ".xscreensaver" ".grip-lame" ".jssc/" ".subversion/" ".wireshark/" "2015-11-20-154503_3286x1080_scrot.png" ".gtkrc.mine" ".custom_xrandr.swl" ".Transcribe!7" ".jnewsrc.as" ".todo.actions.d/" ".steampid" ".rvm/" ".xmobarrc_bar" ".zshrc.pre-oh-my-zsh" ".ripperXrc" ".Xresources" ".asoundrc_bak" ".offlineimaprc" ".mongorc.js" ".vimbakky/" "VirtualBox VMs/" ".zsh_history" "Ubuntu/" ".gtkrc-2.0" ".muttator/" "javascripting/" ".~lock.Interview for Success.doc#" ".filezilla/" "Mail/" ".w3m/" ".mozilla/" ".msmtprc" ".abcde.conf" ".muttrc_bak" ".lyrics/" ".gstreamer-0.10/" "i3/" "Downloads/" ".ICEauthority" "iatt/" ".thunderbird/" "images/" ".emusic/" ".custom_xrandr" "../" "./")
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/pages/jcrew/" (22778 19672 584414 690000) "order-confirmation.html" "../" "./" "index.html")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/pages/" (22774 41932 786779 103000) "examples/" "jcrew/" "../" "./" "index.html")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/src/" (22769 31 897651 143000) "layouts/" "assets/" "helpers/" "pages/" "../" "partials/" "./")
+
+ ("/home/" (22757 6178 841767 295000) "jose/" "../" "root/" "lindsey/" "./")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/assets/img/" (22783 26442 131550 238000) "shoe.jpg" "dot.png" "jcrewcc.png" "../" "logo.png" "./")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/assets/" (22783 26442 124883 773000) "img/" "../" "./")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/dist/" (22783 26442 124883 773000) "examples/" "assets/" "jcrew/" "../" "css/" "./" "index.html")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/order-confirmation/" (22783 26440 914920 445000) ".babelrc" "etc/" "gulpfile.babel.js" "package.json" "README.md" "LICENSE" "example.config.json" ".git/" "../" "src/" "node_modules/" ".gitignore" "dist/" "./")
+
+ ("/home/jose/Sites/ecommerce-responsive-email/" (22783 26428 501963 330000) "npm-debug.log" "order-confirmation/" "../" "./")
+
+ ("/home/jose/" (22783 33427 109845 744000) ".Xmodmap" ".vocabscript" ".fvwm/" ".dropbox-dist/" ".bashrc" ".bash_history" ".m2/" "Templates/" ".cache/" "arithmetics.pegjs" ".icons/" ".xsession-errors.old" ".inputrc" ".z.17998" ".gem/" "Calibre Library/" ".npm/" ".gitconfig" ".bundle/" ".rnd" ".bash_profile" ".local/" "dotfiles/" "Dropbox/" ".zcompdump-xps13-5.3.1" ".zshrc_arch_box" ".xfce4-session.verbose-log.last" ".Xauthority" ".xscreensaver" "binbash" ".themes/" ".Xresources" ".git-credential-cache/" ".thumbnails/" ".ssh/" ".mplayer/" ".android/" ".emulator_console_auth_token" ".HipChat/" ".config/" ".dropbox/" "n/" "Videos/" ".zlogin" ".vimrc" ".dmrc" ".xsession-errors" "Documents/" "davidsimontweet.png" ".viminfo" ".gtkrc-2.0" ".lesshst" ".gimp-2.8/" ".babel.json" ".xfce4-session.verbose-log" ".wine/" ".mozilla/" ".vocab" ".xinitrc" ".esd_auth" ".vim/" "target/" ".java/" ".zshrc" ".AndroidStudio2.3/" "../" ".bash_logout" "photos/" ".emacs.d/" ".pki/" ".mkshrc" ".v8flags.5.1.281.89.jose.json" ".v8flags.5.5.372.41.jose.json" ".dunstrc" "arithmetics.js" ".fehbg" ".thunderbird/" ".oh-my-zsh/" ".z" ".wget-hsts" ".xinitrc.bak" "media/" "Sites/" ".python_history" ".rvm/" "Pictures/" "Android/" ".gradle/" "node_modules/" ".profile" "Desktop/" "AndroidStudioProjects/" ".gnome/" ".putty/" "VirtualBox VMs/" ".IdeaIC2017.1/" "2017-04-19-210339_410x149_scrot.png" "bin/" "Music/" ".zsh_history" "dunstrc" "tmp/" ".ICEauthority" ".simplenote2/" ".zsh-update" ".gnupg/" ".cinnamon/" "Downloads/" "./" ".node_repl_history" ".QtWebEngineProcess/" "Public/")
+
+ ("/home/jose/.simplenote2/" (22783 22562 265809 970000) "notes/" "../" "trash/" "new/" "./" ".notes-info.el")
+
+ ("/home/jose/.simplenote2/notes/" (22783 24505 846902 865000) "7725f3942ed111e3b0ae396d91e93d70" "6a2dbfc17ba04ddb9f9a4e3352eb10cf" "4145fcc7f47611e281485d3729bde14d" "aefc99ea3efb4e8b8c9b1688f06aa32a" "d4ba70d47c134de08d548afe2fc74ce2" "56513ebae7ab5ebb16169b84f0cb2402" "9d21bd9ef49111e2bf630db5a1ee4050" "0a9716abbc1a11e6a6f8e98023b77aab" "6ae2448801db4b54b291bd955819cdc4" "25296f7afb574615b9442c19c6ad7c7a" "92c571c0167b11e78b063516849c2919" "9c4bbd7e789b45e4aed0b62dbba380be" "2fe082f8162f11e79f71cd7cd4dacfcf" "ffa58beb518811e38240917a3466f1ff" "8ba39c09a84829dd9942f1e05869f5a9" "802da9120ccc481ab357f6f6e5e78411" "6788d2a814d811e7a397e978a1fab1d7" "ce91571f6f6a0ef327d2d8a42e6eedb6" "78b55e10dc2746ddbd0fe4c74879d96a" "f5f56011634d11e3b91d0bb75dd28e21" "f9b649dc45fc7d14041710972b5baf1b" "0cd83980118a11e7bd9ab3d8658211b6" "f023f2ab7cae11e38d83634ff6d832de" "10a55fe3fef111e6856857f989148065" "86d9eb9a9031491fa50f0d6764c7bbd8" "../" "f589ac73118d11e7989e31ddd2f17df3" "64908cc56ef911e68d0de1717ed03f46" "b74616945e0483eede219c798f1ac438" "4e13c863d74811e6b01f27b8720e0c41" "3ec325007ea911e6bd8459210c1b3392" "9dfe90661a2b11e7be62650094cc54bf" "5144c969cc924b5b8d86eaa2d0a0aa84" "5738e0c7e4f911e688d6d30c0b4b8a55" "426c691243e64236912b24000e8495e8" "f5053278f53a11e2be3b43229c9f47bf" "e17cf93779a0479e83a29ccf0f3a0b26" "ac32564cf49111e2b22c018d42b26d03" "977bd4a3ee2e11e6a76bbdc6a9495f3e" "c39f3c0e137140208547e83e52328cee" "376ab951f47611e2a91c25fde49a99f4" "2bcf0923b09c46f895f26e5482442259" "9bf9ecbd26ca11e79ed379a977602211" "22541c63f47611e297edf9c63400a561" "./")
+
+ ("/home/jose/Sites/" (22774 38944 298964 269000) "sidecar-data/" "sidecar-cfg/" "../" "velocity/" "html-emails/" "ecommerce-platform/" "spring-stuff/" "sidecar-web/" "sidecar-render/" "sidecar-content/" "ecommerce-responsive-email/" "listovino/" "./")
 
  ("/home/jose/Sites/public_html/" (22147 1992 733234 465000) "test/" "unison/" "aregondigital/" "../" "marsbq/" "coach/" "./")
 
  ("/usr/share/emacs/24.5/etc/" (22000 60820 0 0) "NEWS.18" "TODO" "ORDERS" "FTP" "WHY-FREE" "emacs-buffer.gdb" "NEWS.21" "AUTHORS" "emacs.desktop" "JOKES" "ses-example.ses" "refcards/" "PROBLEMS" "ETAGS.EBNF" "gnus/" "package-keyring.gpg" "NEWS" "publicsuffix.txt" "nxml/" "charsets/" "edt-user.el" "themes/" "spook.lines" "tutorials/" "DEVEL.HUMOR" "NEXTSTEP" "CONTRIBUTE" "images/" "NEWS.20" "LINUX-GNU" "TERMS" "NEWS.23" "emacs.icon" "ps-prin0.ps" "srecode/" "ETAGS.README" "grep.txt" "MH-E-NEWS" "GNU" "schema/" "COPYING" "GNUS-NEWS" "enriched.txt" "MACHINES" "ERC-NEWS" "NEWS.1-17" "forms/" "MORE.STUFF" "README" "gnus-tut.txt" "CENSORSHIP" "NXML-NEWS" "emacs.appdata.xml" "org/" "./" "CALC-NEWS" "ps-prin1.ps" "../" "DOC" "DEBUG" "ORG-NEWS" "future-bug" "rgb.txt" "e/" "NEWS.22" "HELLO" "DISTRIB" "compilation.txt" "THE-GNU-PROJECT" "yow.lines" "NEWS.19")
-
- ("/home/" (20492 12644 490742 288000) "jose/" "clark/" "lost+found/" "../" "./")
-
- ("/home/jose/Sites/" (22157 29331 713238 60000) ".bowerrc" ".gitignore" "stylepiles/" "journal/" "stylr/" "npm-debug.log" "octopress-bak/" "styler/" "amd_espn/" "gtk/" "bm2/" "unicef/" "archive/" "CSWordpress/" "espn_headlines/" "csframework/" "Tex/" "../" "jarenado.github.io/" "winecol/" "octopress/" "labs/" "css3please/" "webpos/" "jasmine/" "blog/" "py_gtk/" "poser/" "mobile/" "derkom/" "nody/" "public_html/" ".editorconfig" "css_tran/" "./" ".gitattributes" "exp/" "iatt-maps" ".jshintrc")
 )
 
 ;; ----- ido-unc-hosts-cache -----

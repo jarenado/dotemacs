@@ -62,7 +62,7 @@
       :ensure evil-surround
       :config
       (progn
-        (global-evil-surround-mode 1)))
+        (global-evil-surround-mode )))
 
     (use-package key-chord
       :ensure key-chord
@@ -153,5 +153,7 @@
         ;(key-chord-mode 1)))
 
   ;)
+
+(evil-define-key 'normal evil-surround-mode-map "ys" 'evil-surround-region)
 
 (provide 'my-evil)

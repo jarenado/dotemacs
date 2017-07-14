@@ -37,7 +37,7 @@
   "x"         'helm-M-x
   "V"         'exchange-point-and-mark
   "B"         'eval-buffer
-  ;; "e"         'evil-ace-jump-word-mode
+ ;; "e"         'evil-ace-jump-word-mode
   "l"         'evil-avy-goto-line
   ;; "x"         'evil-ace-jump-char-mode
 

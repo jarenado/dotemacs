@@ -2,8 +2,23 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
- (filename . "~/org/journal.org")
+(("packagedetails.html"
+ (filename . "~/Sites/ecommerce-responsive-email/order-confirmation/src/partials/packagedetails.html")
+ (front-context-string)
+ (rear-context-string . "rtotalnomessage}")
+ (position . 100))
+("shipping-confirmation.html"
+ (filename . "~/Sites/ecommerce-responsive-email/order-confirmation/src/pages/jcrew/shipping-confirmation.html")
+ (front-context-string . "rapper\">\n	<colum")
+ (rear-context-string . "class=\"package_w")
+ (position . 118))
+("order-confirmation.html"
+ (filename . "~/Sites/ecommerce-responsive-email/order-confirmation/src/pages/jcrew/order-confirmation.html")
+ (front-context-string . "}\n  <row>\n    <c")
+ (rear-context-string . "  {{>navigation}")
+ (position . 90))
+("org-capture-last-stored"
+ (filename . "~/org/")
  (front-context-string . "**** stuff here ")
  (rear-context-string . "-12-10 Saturday\n")
  (position . 1555))
