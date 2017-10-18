@@ -1,3 +1,4 @@
+;;; Config
 (add-to-list 'load-path (concat user-emacs-directory "config"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/languages"))
 (add-to-list 'load-path (concat user-emacs-directory "config" "/web-mode"))
@@ -31,9 +32,20 @@
 ;;Turn of the fucking bell
 (setq visible-bell nil) ;; The default
 (setq ring-bell-function 'ignore)
+
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
-;; (setq indent-line-function 'insert-tab)
+;;TODO clean this shit off
+(setq c-basic-offset 2)
+(setq css-basic-offset 2)
+(setq css-indent-offset 2)
+(setq javascript-indent-level 2)
+(setq js2-basic-offset 2)
+(setq js-indent-level 2)
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+
+(global-flycheck-mode)
 ;; toolbar
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -60,6 +72,7 @@
 ;;(require 'my-magit)
 ;;(require 'my-package-list)
 ;(require 'my-ibuffer)
+
 (require 'my-eyecandy)
 (require 'my-helm)
 (require 'my-languages)
@@ -79,12 +92,13 @@
 
 
 ;; Lindsey's computer runs 24.3. magit requires 24.4.
-(if (>= emacs-major-version 24.4)  
+(if (>= emacs-major-version 24.4)
   (require 'my-magit)
   (require 'my-multi-term)
 (set-default-font "Fira-Code-15")
 )
-;; no startup msg  
+
+;; no startup msg
 ;; (setq inhibit-startup-message t)        ; Disable startup message 
 
 ;; (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
@@ -108,27 +122,29 @@
 ;;  '(tab-width 2))
 
 (provide 'init)
-
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(package-selected-packages
+;;    (quote
+;;     (flycheck yasnippet web-mode use-package simplenote2 rebecca-theme powerline php-mode neotree magit key-chord js2-mode helm-projectile golden-ratio evil-surround evil-nerd-commenter evil-matchit evil-leader company))))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(standard-indent 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(org-agenda-files (quote ("~/org/notes.org")))
- '(package-selected-packages
-   (quote
-    (rebecca-theme magit neotree golden-ratio company yasnippet web-mode use-package solarized-theme simplenote2 powerline php-mode key-chord js2-mode helm-projectile evil-surround evil-nerd-commenter evil-matchit evil-leader)))
- '(safe-local-variable-values
-   (quote
-    ((eval add-hook
-           (quote after-save-hook)
-           (quote simplenote2-push-buffer))))))
