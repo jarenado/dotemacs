@@ -46,6 +46,9 @@
 (setq web-mode-css-indent-offset 2)
 
 (global-flycheck-mode)
+(with-eval-after-load 'flycheck
+  (flycheck-add-mode 'html-tidy 'web-mode)
+  (flycheck-add-mode 'css-csslint 'scss-mode))
 ;; toolbar
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -141,6 +144,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (yaml-mode yasnippet web-mode use-package simplenote2 rebecca-theme powerline php-mode neotree magit key-chord js2-mode helm-projectile golden-ratio flycheck evil-surround evil-nerd-commenter evil-matchit evil-leader company)))
  '(standard-indent 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
