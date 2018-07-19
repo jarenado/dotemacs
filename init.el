@@ -34,6 +34,10 @@
 (setq ring-bell-function 'ignore)
 
 (setq-default indent-tabs-mode nil)
+(setq tab-width 2) ; or any other preferred value
+(defvaralias 'c-basic-offset 'tab-width)
+(defvaralias 'cperl-indent-level 'tab-width)
+
 ;;TODO clean this shit off
 (setq c-basic-offset 2)
 (setq css-basic-offset 2)
@@ -45,7 +49,7 @@
 (setq web-mode-code-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
 
-(global-flycheck-mode)
+;;(global-flycheck-mode)
 (with-eval-after-load 'flycheck
   (flycheck-add-mode 'html-tidy 'web-mode)
   (flycheck-add-mode 'css-csslint 'scss-mode))
@@ -101,44 +105,8 @@
 (set-default-font "Fira-Code-15")
 )
 
-;; no startup msg
-;; (setq inhibit-startup-message t)        ; Disable startup message 
-
-;; (setq backup-directory-alist '(("." . "~/.emacs.d/emacs-backup"))
-;;   ;; backup-by-copying t    ; Don't delink hardlinks
-;;   version-control t      ; Use version numbers on backups
-;;   delete-old-versions t  ; Automatically delete excess backups
-;;   kept-new-versions 20   ; how many of the newest versions to keep
-;;       kept-old-versions 5    ; and how many of the old
-;;   )
-
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(custom-safe-themes
-;;    (quote
-;;     ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
-;;  '(evil-shift-width 2)
-;;  '(tab-stop-list (number-sequence 2 200 2))
-;;  '(tab-width 2))
 
 (provide 'init)
-;; (custom-set-variables
-;;  ;; custom-set-variables was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(package-selected-packages
-;;    (quote
-;;     (flycheck yasnippet web-mode use-package simplenote2 rebecca-theme powerline php-mode neotree magit key-chord js2-mode helm-projectile golden-ratio evil-surround evil-nerd-commenter evil-matchit evil-leader company))))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
