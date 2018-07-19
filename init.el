@@ -50,10 +50,12 @@
 (setq web-mode-css-indent-offset 2)
 
 ;;(global-flycheck-mode)
+;; TODO: global flychecking
 (with-eval-after-load 'flycheck
   (flycheck-add-mode 'html-tidy 'web-mode)
   (flycheck-add-mode 'css-csslint 'scss-mode))
-;; toolbar
+
+;; toolbar (or lack thereof
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -62,10 +64,10 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 
 (when window-system
-(progn
-(set-frame-size (selected-frame) 205 75)
-(split-window-horizontally)
-(enlarge-window 20)))
+  (progn
+    (set-frame-size (selected-frame) 205 75)
+    (split-window-horizontally)
+    (enlarge-window 20)))
 
 ;; default browser
 (setq browse-url-browser-function 'browse-url-chromium) ; google's browser
