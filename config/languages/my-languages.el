@@ -1,4 +1,4 @@
-(require 'my-javascript)
+;; (require 'my-javascript)
 (require 'my-php)
 ;; (require 'my-snippets)
 

@@ -84,7 +84,7 @@
 
 (require 'my-eyecandy)
 (require 'my-helm)
-(require 'my-languages)
+;; (require 'my-languages)
 (require 'my-snippets)
 (require 'my-org-mode)
 (require 'my-evil)
@@ -92,7 +92,7 @@
 ;; (require 'my-slime)
 (require 'my-leader-keys)
 (require 'my-web-mode)
-(require 'my-indent)
+;; (require 'my-indent)
 (require 'my-simplenote)
 (require 'my-scratch-message)
 (require 'my-company-mode)
@@ -116,7 +116,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (yaml-mode yasnippet web-mode use-package simplenote2 rebecca-theme powerline php-mode neotree magit key-chord js2-mode helm-projectile golden-ratio flycheck evil-surround evil-nerd-commenter evil-matchit evil-leader company)))
+    (json-mode yaml-mode yasnippet web-mode use-package simplenote2 rebecca-theme powerline php-mode neotree magit key-chord js2-mode helm-projectile golden-ratio flycheck evil-surround evil-nerd-commenter evil-matchit evil-leader company)))
  '(standard-indent 2))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
